@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Enter_Mobile_No_Activity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/_80sdp"
+        android:src="@drawable/message_app_icon"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="@dimen/_250sdp">
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18ssp"
+                android:text="Enter Your mobile number"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_34sdp"/>
+
+            <TextView
+                android:textColor="@color/light_Grey"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11ssp"
+                android:text="Plz confirm your country code and"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <TextView
+                android:textColor="@color/light_Grey"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11ssp"
+                android:text="enter your phone number"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <TextView
+                android:gravity="bottom"
+                android:textColor="@color/light_Grey"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11ssp"
+                android:text="Country code"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp">
+
+                <RelativeLayout
+                    android:gravity="bottom"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/light_black"
+                        android:textStyle="bold"
+                        android:text="+91"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_22sdp"/>
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/arrow_down"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_22sdp"/>
+
+                    <View
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_23sdp"
+                        android:background="@color/light_Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"/>
+
+                </RelativeLayout>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/enterMobileNumber"
+                    android:textColorHint="@color/Very_light_Grey"
+                    android:hint="Mobile number"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp">
+
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:textColor="@color/light_Grey"
+                    android:textStyle="bold"
+                    android:text="Name"
+                    android:textSize="@dimen/_13ssp"
+                    android:layout_width="@dimen/_71sdp"
+                    android:layout_height="@dimen/_21sdp"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/enterName"
+                    android:textColorHint="@color/Very_light_Grey"
+                    android:hint="Enter name"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continueButton"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="Continue"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                android:background="@drawable/continue_button_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Verify_MobileNumber_Activity">
+
+    <TextView
+        android:layout_marginTop="@dimen/_21sdp"
+        android:textColor="@color/Continue_Button_color"
+        android:textStyle="bold"
+        android:text="OTP VERIFICATION"
+        android:textSize="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:text="A verification code has been sent to your mobile number"
+        android:textSize="@dimen/_12ssp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"/>
+
+    <EditText
+        android:maxLines="1"
+        android:id="@+id/enterOTP"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:hint="Enter OTP here"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"/>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/_12ssp"
+            android:text="Didn't recieve the code ? "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/Resend"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:textColor="@color/Continue_Button_color"
+            android:text="Resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmbutton"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        android:background="@drawable/confirm_button_background"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"/>
+
+</LinearLayout>
